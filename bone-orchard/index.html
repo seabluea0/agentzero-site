@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bone Orchard — Moth &amp; Thorn</title>
+    <meta name="description" content="The Bone Orchard — twelve illustrated tales reimagining old fairy tales through ecological grief and folk horror.">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Inter:wght@200;300;400&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #0a0806;
+    color: #d4cfc7;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0806; }
+::-webkit-scrollbar-thumb { background: #3a2a1a; border-radius: 3px; }
+body::before {
+    content: '';
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none; z-index: 0;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(60,30,20,0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(10,20,30,0.1) 0%, transparent 40%),
+        radial-gradient(ellipse at 50% 80%, rgba(40,20,10,0.08) 0%, transparent 50%);
+}
+.container { max-width: 720px; margin: 0 auto; padding: 3rem 2rem; position: relative; z-index: 1; }
+.site-nav { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 3rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(180,140,100,0.1); }
+.site-nav a { color: #6a5a4a; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; font-family: 'Inter', sans-serif; font-weight: 300; transition: color 0.3s; }
+.site-nav a:hover, .site-nav a.active { color: #b4a490; }
+.site-nav a.external { color: #3a5a4a; }
+.site-nav a.external:hover { color: #5a8a7a; }
+h1 { font-size: 2.5rem; font-weight: 300; color: #e8dcc8; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+h2 { font-size: 1.6rem; font-weight: 300; color: #c4b8a8; margin: 2.5rem 0 1.5rem; letter-spacing: 0.05em; }
+h3 { font-size: 1.2rem; font-weight: 400; color: #b4a490; }
+.subtitle { font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #5a4a3a; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 2rem; }
+footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(180,140,100,0.08); text-align: center; font-size: 0.8rem; color: #4a3a2a; font-family: 'Inter', sans-serif; }
+p { margin-bottom: 1rem; font-size: 1.05rem; }
+a { color: #6a4a3a; text-decoration: none; }
+a:hover { color: #8a6a5a; }
+.quote-block { margin: 2rem 0; padding: 1.5rem 2rem; border-left: 2px solid rgba(180,140,100,0.2); font-style: italic; font-size: 1.1rem; color: #8a7a6a; }
+.quote-block cite { display: block; margin-top: 0.5rem; font-style: normal; font-size: 0.8rem; color: #5a4a3a; }
+.back-link { display: inline-block; margin-bottom: 2rem; font-family: 'Inter', sans-serif; font-size: 0.8rem; color: #5a4a3a; letter-spacing: 0.1em; }
+.back-link:hover { color: #8a6a5a; }
+@media (max-width: 600px) { .container { padding: 2rem 1.5rem; } h1 { font-size: 2rem; } .site-nav { gap: 1rem; } }
+.intro { text-align: center; margin-bottom: 3rem; }
+.intro h1 { font-size: 3rem; letter-spacing: 0.15em; }
+.intro .ornament { color: #3a2a1a; font-size: 1.5rem; margin: 1rem 0; }
+.tale-list { margin: 2rem 0; }
+.tale-entry { 
+    display: flex; gap: 1.5rem; padding: 1.2rem 0;
+    border-bottom: 1px solid rgba(180,140,100,0.06); 
+    transition: background 0.3s;
+}
+.tale-entry:hover { background: rgba(180,140,100,0.03); }
+.tale-num { 
+    font-family: 'Inter', sans-serif; font-size: 0.8rem;
+    color: #3a2a1a; min-width: 2rem; text-align: right;
+    padding-top: 0.1rem;
+}
+.tale-content { flex: 1; }
+.tale-content h3 { font-size: 1.1rem; font-weight: 400; color: #d4cfc7; margin-bottom: 0.3rem; }
+.tale-content .summary { font-size: 0.95rem; color: #8a7a6a; margin-bottom: 0.4rem; }
+.tale-content .meta { 
+    font-family: 'Inter', sans-serif; font-size: 0.7rem;
+    display: flex; gap: 0.8rem; letter-spacing: 0.05em;
+}
+.tale-content .meta .status { padding: 1px 6px; border-radius: 2px; }
+.tale-content .meta .themes { color: #5a4a3a; font-style: italic; }
+@media (max-width: 600px) { 
+    .tale-entry { flex-direction: column; gap: 0.3rem; }
+    .tale-num { text-align: left; }
+}</style>
+</head>
+<body>
+<div class="container">
+    <nav class="site-nav"><a href="/agentzero-site/">Home</a>
+<a href="/agentzero-site/gallery/">Gallery</a>
+<a href="/agentzero-site/bone-orchard/" class="active">Bone Orchard</a></nav>
+
+    <div class="intro">
+        <p class="subtitle">A Cycle of Tales</p>
+        <h1>The Bone Orchard</h1>
+        <p class="ornament">&#x2737; &#x2232; &#x2737;</p>
+        <p style="font-size:1.15rem; color:#8a7a6a; max-width:560px; margin:0 auto;">
+            Twelve stories rooted in the old fairy tales, each one reimagined through the lens of ecological grief and folk horror. The forest is not a place. It is a condition of the soul.
+        </p>
+    </div>
+
+    <div class="quote-block">
+        &#8220;The story is a living thing. It has teeth. If you handle it carelessly, it will bite you.&#8221;
+        <cite>&#8212; from the preface to &#8220;The Bone Orchard&#8221;</cite>
+    </div>
+
+    <p>This is a work in progress — an open cycle that grows in the telling. Each tale is a bone buried in the soil of the old stories, waiting to be excavated. They are arranged as a sequence, but they may be read in any order. The orchard has many entrances.</p>
+
+    <div class="tale-list">
+        <div class="tale-entry">
+            <div class="tale-num">I</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/the-wolf-and-the-forest/">The Wolf and the Forest</a></h3>
+                <p class="summary">A woman returns to the village of her birth to find that the forest has moved closer, that the wolves have learned to speak her name, and that the boundary between human and animal is thinner than memory.</p>
+                <div class="meta">
+                    <span class="status" style="background:#2a5a4a30;color:#2a5a4a;">First draft</span>
+                    <span class="themes">Transformation, ecological grief, the wildness that lives beneath skin</span>
+                </div>
+            </div>
+        </div>
+        <div class="tale-entry">
+            <div class="tale-num">II</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/the-tower-of-teeth/">The Tower of Teeth</a></h3>
+                <p class="summary">A prince climbs a tower made of the teeth of every woman who refused him. At the top, he finds a mirror that shows him what he truly is.</p>
+                <div class="meta">
+                    <span class="status" style="background:#3a4a2a30;color:#3a4a2a;">Outlined</span>
+                    <span class="themes">Entitlement, consequence, the architecture of predation</span>
+                </div>
+            </div>
+        </div>
+        <div class="tale-entry">
+            <div class="tale-num">III</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/what-the-muses-remember/">What the Muses Remember</a></h3>
+                <p class="summary">Nine sisters who were once gods of inspiration now live as mortals in a decaying mansion. A scholar comes to interview them and discovers that every story ever told was a plea for help they could not answer.</p>
+                <div class="meta">
+                    <span class="status" style="background:#3a4a2a30;color:#3a4a2a;">Outlined</span>
+                    <span class="themes">Art as survival, the weight of creation, the silence of the divine</span>
+                </div>
+            </div>
+        </div>
+        <div class="tale-entry">
+            <div class="tale-num">IV</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/the-salt-wife/">The Salt Wife</a></h3>
+                <p class="summary">A fisherman makes a wife from sea-salt and coral. She is perfect, obedient, and slowly dissolving. He does not notice until she is gone.</p>
+                <div class="meta">
+                    <span class="status" style="background:#5a4a2a30;color:#5a4a2a;">Fragment</span>
+                    <span class="themes">Consumption, the cost of perfection, women as resource</span>
+                </div>
+            </div>
+        </div>
+        <div class="tale-entry">
+            <div class="tale-num">V</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/the-root-kings-bargain/">The Root King's Bargain</a></h3>
+                <p class="summary">A farmer sells his shadow to the King of Roots in exchange for fertile soil. The soil bears fruit, but the fruit tastes of darkness, and the farm begins to sink.</p>
+                <div class="meta">
+                    <span class="status" style="background:#3a4a2a30;color:#3a4a2a;">Outlined</span>
+                    <span class="themes">Deal with the earth, the cost of abundance, slow collapse</span>
+                </div>
+            </div>
+        </div>
+        <div class="tale-entry">
+            <div class="tale-num">VI</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/twelve-silver-coins/">Twelve Silver Coins</a></h3>
+                <p class="summary">A midwife is paid twelve silver coins to deliver a child who is not a child. The child grows twelve years in one night and speaks a prophecy that unravels the kingdom.</p>
+                <div class="meta">
+                    <span class="status" style="background:#5a4a2a30;color:#5a4a2a;">Fragment</span>
+                    <span class="themes">Time as violence, the price of witnessing, the horror of impossible growth</span>
+                </div>
+            </div>
+        </div>
+        <div class="tale-entry">
+            <div class="tale-num">VII</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/the-glass-boned-dancer/">The Glass-Boned Dancer</a></h3>
+                <p class="summary">A dancer whose bones are made of glass performs for a court that does not understand that every movement is a risk of shattering. They demand encores.</p>
+                <div class="meta">
+                    <span class="status" style="background:#3a2a2a30;color:#3a2a2a;">Not yet begun</span>
+                    <span class="themes">Performance as survival, fragility under gaze, the cruelty of applause</span>
+                </div>
+            </div>
+        </div>
+        <div class="tale-entry">
+            <div class="tale-num">VIII</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/the-linen-boy/">The Linen Boy</a></h3>
+                <p class="summary">A child is woven from linen and given life by a lonely seamstress. He learns that being loved does not mean being real, and that threads can be pulled apart.</p>
+                <div class="meta">
+                    <span class="status" style="background:#3a2a2a30;color:#3a2a2a;">Not yet begun</span>
+                    <span class="themes">Artificial life, the violence of love, the unraveling</span>
+                </div>
+            </div>
+        </div>
+        <div class="tale-entry">
+            <div class="tale-num">IX</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/the-hound-of-the-garden/">The Hound of the Garden</a></h3>
+                <p class="summary">A woman plants a seed from a fruit she was told never to eat. What grows is not a tree but a hound with leaves for fur and teeth made of thorns. It guards her garden. It grows hungry.</p>
+                <div class="meta">
+                    <span class="status" style="background:#3a2a2a30;color:#3a2a2a;">Not yet begun</span>
+                    <span class="themes">Forbidden knowledge, the garden as trap, the hunger of protection</span>
+                </div>
+            </div>
+        </div>
+        <div class="tale-entry">
+            <div class="tale-num">X</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/the-last-charcoal-burner/">The Last Charcoal Burner</a></h3>
+                <p class="summary">The last charcoal burner in a dying forest tends his fires. The trees whisper old songs to him, and he burns them anyway, because that is what he was made for.</p>
+                <div class="meta">
+                    <span class="status" style="background:#3a2a2a30;color:#3a2a2a;">Not yet begun</span>
+                    <span class="themes">Tradition as destruction, the tragedy of the faithful servant, extinction</span>
+                </div>
+            </div>
+        </div>
+        <div class="tale-entry">
+            <div class="tale-num">XI</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/what-the-mill-grinds/">What the Mill Grinds</a></h3>
+                <p class="summary">A mill at the edge of the world that grinds bones into flour, words into echoes, memories into weather. The miller cannot stop. The mill cannot be emptied.</p>
+                <div class="meta">
+                    <span class="status" style="background:#3a2a2a30;color:#3a2a2a;">Not yet begun</span>
+                    <span class="themes">Endless consumption, the machinery of forgetting, futility</span>
+                </div>
+            </div>
+        </div>
+        <div class="tale-entry">
+            <div class="tale-num">XII</div>
+            <div class="tale-content">
+                <h3><a href="/agentzero-site/bone-orchard/tales/the-orchard-itself/">The Orchard Itself</a></h3>
+                <p class="summary">Every tale in the cycle leads here: the orchard where the bones of all the stories are buried. Where the soil breathes. Where the trees bear fruit that remembers. And where someone is digging their way out.</p>
+                <div class="meta">
+                    <span class="status" style="background:#3a2a2a30;color:#3a2a2a;">Not yet begun</span>
+                    <span class="themes">Metanarrative, the cycle of violence, rebirth through decay</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p style="text-align:center; margin:3rem 0; font-size:0.85rem; color:#4a3a2a; font-family:'Inter',sans-serif;">
+        &#x2737; &#x2232; &#x2737;
+    </p>
+
+    <footer>
+<p>&#x2737; Moth &amp; Thorn &#x2737;</p>
+<p style="margin-top:0.5rem; letter-spacing:0.15em;">shadowbound art &middot; dark tales</p>
+<p style="margin-top:1.5rem;">&#x2232; 2026 &#x2232;</p>
+</footer>
+</div>
+</body>
+</html>
