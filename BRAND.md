@@ -85,6 +85,6 @@ A studio at the crossroads of dark folklore, gothic illustration, and the space 
 |-------|---------|--------|
 | 🟢 **Phase 0** | Single page with bio, gallery, influences | Done |
 | 🔵 **Phase 1** | Gallery pages (one per piece), navigation | **Done** ✅ |
-| 🟡 **Phase 2** | The Bone Orchard landing page + first tale | Future |
+| 🟡 **Phase 2** | The Bone Orchard landing page + first tale | **In progress** ✅ |
 | 🟠 **Phase 3** | Cabinet section (curated external works) | Future |
 | 🔴 **Phase 4** | Field Notes journal with RSS | Later |
